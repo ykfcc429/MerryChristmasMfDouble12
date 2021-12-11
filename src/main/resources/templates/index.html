@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到圣诞十二响</title>
+</head>
+<body>
+<h1>您好</h1>
+<br/>
+<!--/*@thymesVar id="name" type="com.example.demo.pojo.User"*/-->
+<span th:text="${user.name}">span默认文本内容</span>
+<form method="GET" th:action="@{/upLoad}">
+    <button type="submit" name="submit" value="value" class="button">上传愿望单</button>
+</form>
+
+<form method="GET" th:action="@{/logOut}">
+    <button type="submit" name="submit" value="value" class="button">退出登录</button>
+</form>
+</body>
+</html>

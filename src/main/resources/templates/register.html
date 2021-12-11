@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<h3>请填写你的邮箱</h3>
+<br/>
+<h3>这是你的唯一身份标识，用来接收你需要满足的愿望单</h3>
+<h3>每个邮箱只能提交一次愿望单</h3>
+<h3>整个系统最多能接受5个愿望单，请勿乱搞</h3>
+
+<form method="POST" th:action="@{/register}">
+    <input type="email" name="token" id="token"/>
+    <button type="submit" name="submit" value="value" class="button">试图登录</button>
+</form>
+</body>
+</html>

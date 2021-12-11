@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>愿望单提交</title>
+</head>
+<body>
+<form method="POST" th:action="@{/upLoadGift}">
+    礼物1:<input type="text" name="gift1" />
+    链接1:<input type="url" name="url1" />
+    <br/>
+    礼物2:<input type="text" name="gift2" />
+    链接2:<input type="url" name="url2" />
+    <br/>
+    礼物3:<input type="text" name="gift3" />
+    链接3:<input type="url" name="url3" />
+    <br/>
+    <button type="submit" name="submit" value="value" class="button">提交</button>
+</form>
+</body>
+</html>

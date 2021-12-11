@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>提示信息</title>
+</head>
+<body>
+<form method="GET" th:action="@{/index}">
+    <h1><span th:text="${status}">默认消息</span></h1>
+    <button type="submit" name="submit" value="value" class="button">回到首页</button>
+</form>
+</body>
+</html>
